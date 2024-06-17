@@ -1,0 +1,17 @@
+Ignore as pastas : ex 1 /2/3/4/5 
+
+Abrir no seu mxlab, e criar um novo projeto, de o nome de seu gosto.
+Após isso, na parte de Source Files importe os arquivos .c e .h que estão soltos
+e faça compilação e pronto só jogar depois de compilado a pasta .X na
+sua plaquinha online(PICSimLab, placa pic18f4550) para fazer a simulação.
+
+
+o Arquivo "jogoAula.X" é o arquivo quando criamos um novo projeto no MXLAB, dei um nome qualquer.
+
+obs: Se você não conhece MXLAB ou como criar os arquivos, de uma pesquisada antes no YT.
+
+------------------
+Material Utilizado
+
+Placa 18f4550 
+Apps: Mxlab / PicSimLab(placa online )  

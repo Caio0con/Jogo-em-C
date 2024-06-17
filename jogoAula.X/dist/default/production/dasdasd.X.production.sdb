@@ -1,0 +1,366 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"17 C:\Users\Aula\Downloads\SPACE_INVADERS2/16Keys.c
+[v _varre_teclas varre_teclas `(uc  1 e 1 0 ]
+"51
+[v _trata_teclas trata_teclas `(uc  1 e 1 0 ]
+"2 C:\Users\Aula\Downloads\SPACE_INVADERS2/atraso.c
+[v _atraso_ms atraso_ms `(v  1 e 1 0 ]
+"18 C:\Users\Aula\Downloads\SPACE_INVADERS2/invaders.c
+[v _special_char special_char `(v  1 e 1 0 ]
+"28
+[v _print_special_character print_special_character `(v  1 e 1 0 ]
+"35
+[v _lcd_pos lcd_pos `(uc  1 e 1 0 ]
+"154
+[v _inicializar inicializar `(v  1 e 1 0 ]
+"186
+[v _init_timer0 init_timer0 `(v  1 e 1 0 ]
+"194
+[v _high_isr high_isr `IIH(v  1 e 1 0 ]
+"221
+[v _itoa itoa `(*.30uc  1 e 2 0 ]
+"230
+[v _main main `(v  1 e 1 0 ]
+"5 C:\Users\Aula\Downloads\SPACE_INVADERS2/lcd.c
+[v _lcd_wr lcd_wr `(v  1 e 1 0 ]
+"10
+[v _lcd_cmd lcd_cmd `(v  1 e 1 0 ]
+"21
+[v _lcd_dat lcd_dat `(v  1 e 1 0 ]
+"34
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+"52
+[v _lcd_str lcd_str `(v  1 e 1 0 ]
+"63
+[v _lcd_set_cursor lcd_set_cursor `(v  1 e 1 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c90\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c90\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c90\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c90\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c90\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c90\common\Umul64.c
+[v ___omul __omul `(ul  1 e 4 0 ]
+"15 C:\Users\Aula\Downloads\SPACE_INVADERS2/16Keys.c
+[v _tecla_pres tecla_pres `uc  1 e 1 0 ]
+"11 C:\Users\Aula\Downloads\SPACE_INVADERS2/invaders.c
+[v _data1 data1 `[8]uc  1 e 8 0 ]
+"12
+[v _data3 data3 `[8]uc  1 e 8 0 ]
+"15
+[v _data2 data2 `[8]uc  1 e 8 0 ]
+"146
+[v _ship_pos ship_pos `VEi  1 e 2 0 ]
+"147
+[v _ship_posz ship_posz `VEi  1 e 2 0 ]
+"148
+[v _ship_pos_y ship_pos_y `VEi  1 e 2 0 ]
+"149
+[v _ship_pos_z ship_pos_z `VEi  1 e 2 0 ]
+"150
+[v _bullet_x bullet_x `VEi  1 e 2 0 ]
+[v _bullet_y bullet_y `VEi  1 e 2 0 ]
+[s S104 invader 6 `i 1 linha 2 0 `i 1 coluna 2 2 `i 1 alive 2 4 ]
+"151
+[v _invaders invaders `VE[9]S104  1 e 54 0 ]
+"152
+[v _score score `VEi  1 e 2 0 ]
+"2453 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4550.h
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+[s S24 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"2483
+[s S33 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S41 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S44 . 1 `S24 1 . 1 0 `S33 1 . 1 0 `S41 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES44  1 e 1 @3969 ]
+"2705
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+[s S252 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+`uc 1 RE3 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 RDPU 1 0 :1:7 
+]
+"2868
+[s S259 . 1 `uc 1 CK1SPP 1 0 :1:0 
+`uc 1 CK2SPP 1 0 :1:1 
+`uc 1 OESPP 1 0 :1:2 
+]
+[s S263 . 1 `uc 1 PD2 1 0 :1:0 
+`uc 1 PC2 1 0 :1:1 
+`uc 1 CCP10 1 0 :1:2 
+`uc 1 CCP9E 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 CCP2E 1 0 :1:7 
+]
+[s S270 . 1 `uc 1 RDE 1 0 :1:0 
+`uc 1 WRE 1 0 :1:1 
+`uc 1 CS 1 0 :1:2 
+`uc 1 PC3E 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 PA2E 1 0 :1:7 
+]
+[s S277 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PB2 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 RE7 1 0 :1:7 
+]
+[u S282 . 1 `S252 1 . 1 0 `S259 1 . 1 0 `S263 1 . 1 0 `S270 1 . 1 0 `S277 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES282  1 e 1 @3972 ]
+"3625
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"4001
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"4223
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+"6581
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"8069
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"8146
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+[s S110 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"8614
+[s S119 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S128 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S132 . 1 `S110 1 . 1 0 `S119 1 . 1 0 `S128 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES132  1 e 1 @4082 ]
+"230 C:\Users\Aula\Downloads\SPACE_INVADERS2/invaders.c
+[v _main main `(v  1 e 1 0 ]
+{
+"266
+[v main@i i `i  1 a 2 34 ]
+"277
+[v main@tecla_atual tecla_atual `uc  1 a 1 33 ]
+"251
+[v main@buff buff `[3]uc  1 a 3 30 ]
+"325
+} 0
+"51 C:\Users\Aula\Downloads\SPACE_INVADERS2/16Keys.c
+[v _trata_teclas trata_teclas `(uc  1 e 1 0 ]
+{
+"52
+[v trata_teclas@t t `uc  1 a 1 10 ]
+"68
+} 0
+"17
+[v _varre_teclas varre_teclas `(uc  1 e 1 0 ]
+{
+"18
+[v varre_teclas@key key `uc  1 a 1 8 ]
+"49
+} 0
+"18 C:\Users\Aula\Downloads\SPACE_INVADERS2/invaders.c
+[v _special_char special_char `(v  1 e 1 0 ]
+{
+[v special_char@cgram_loc cgram_loc `uc  1 a 1 wreg ]
+"19
+[v special_char@j j `ui  1 a 2 16 ]
+"18
+[v special_char@cgram_loc cgram_loc `uc  1 a 1 wreg ]
+[v special_char@data data `*.30uc  1 p 1 14 ]
+[v special_char@cgram_loc cgram_loc `uc  1 a 1 15 ]
+"25
+} 0
+"28
+[v _print_special_character print_special_character `(v  1 e 1 0 ]
+{
+[v print_special_character@cgram_loc cgram_loc `uc  1 a 1 wreg ]
+[v print_special_character@cgram_loc cgram_loc `uc  1 a 1 wreg ]
+[v print_special_character@lcd_loc lcd_loc `uc  1 p 1 16 ]
+[v print_special_character@cgram_loc cgram_loc `uc  1 a 1 17 ]
+"31
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 14 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 13 ]
+[v ___awdiv@counter counter `uc  1 a 1 12 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 8 ]
+[v ___awdiv@divisor divisor `i  1 p 2 10 ]
+"41
+} 0
+"52 C:\Users\Aula\Downloads\SPACE_INVADERS2/lcd.c
+[v _lcd_str lcd_str `(v  1 e 1 0 ]
+{
+"54
+[v lcd_str@i i `uc  1 a 1 27 ]
+"52
+[v lcd_str@str str `*.35Cuc  1 p 2 23 ]
+"61
+} 0
+"21
+[v _lcd_dat lcd_dat `(v  1 e 1 0 ]
+{
+[v lcd_dat@val val `uc  1 a 1 wreg ]
+[v lcd_dat@val val `uc  1 a 1 wreg ]
+"23
+[v lcd_dat@val val `uc  1 a 1 13 ]
+"30
+} 0
+"63
+[v _lcd_set_cursor lcd_set_cursor `(v  1 e 1 0 ]
+{
+[v lcd_set_cursor@col col `uc  1 a 1 wreg ]
+"65
+[v lcd_set_cursor@address address `uc  1 a 1 16 ]
+"63
+[v lcd_set_cursor@col col `uc  1 a 1 wreg ]
+[v lcd_set_cursor@row row `uc  1 p 1 14 ]
+[v lcd_set_cursor@col col `uc  1 a 1 15 ]
+"87
+} 0
+"35 C:\Users\Aula\Downloads\SPACE_INVADERS2/invaders.c
+[v _lcd_pos lcd_pos `(uc  1 e 1 0 ]
+{
+[v lcd_pos@col col `i  1 p 2 8 ]
+[v lcd_pos@line line `i  1 p 2 10 ]
+"137
+} 0
+"34 C:\Users\Aula\Downloads\SPACE_INVADERS2/lcd.c
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+{
+"50
+} 0
+"10
+[v _lcd_cmd lcd_cmd `(v  1 e 1 0 ]
+{
+[v lcd_cmd@val val `uc  1 a 1 wreg ]
+[v lcd_cmd@val val `uc  1 a 1 wreg ]
+"12
+[v lcd_cmd@val val `uc  1 a 1 13 ]
+"19
+} 0
+"5
+[v _lcd_wr lcd_wr `(v  1 e 1 0 ]
+{
+[v lcd_wr@val val `uc  1 a 1 wreg ]
+[v lcd_wr@val val `uc  1 a 1 wreg ]
+"7
+[v lcd_wr@val val `uc  1 a 1 8 ]
+"8
+} 0
+"2 C:\Users\Aula\Downloads\SPACE_INVADERS2/atraso.c
+[v _atraso_ms atraso_ms `(v  1 e 1 0 ]
+{
+"4
+[v atraso_ms@i i `ui  1 a 2 10 ]
+"5
+[v atraso_ms@j j `uc  1 a 1 12 ]
+"2
+[v atraso_ms@valor valor `ui  1 p 2 8 ]
+"21
+} 0
+"221 C:\Users\Aula\Downloads\SPACE_INVADERS2/invaders.c
+[v _itoa itoa `(*.30uc  1 e 2 0 ]
+{
+[v itoa@val val `ui  1 p 2 20 ]
+[v itoa@str str `*.30uc  1 p 1 22 ]
+"228
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 12 ]
+"7
+[v ___lwmod@dividend dividend `ui  1 p 2 8 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 10 ]
+"25
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 17 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 19 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 13 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 15 ]
+"30
+} 0
+"186 C:\Users\Aula\Downloads\SPACE_INVADERS2/invaders.c
+[v _init_timer0 init_timer0 `(v  1 e 1 0 ]
+{
+"192
+} 0
+"154
+[v _inicializar inicializar `(v  1 e 1 0 ]
+{
+"184
+} 0
+"194
+[v _high_isr high_isr `IIH(v  1 e 1 0 ]
+{
+"208
+[v high_isr@i i `i  1 a 2 6 ]
+"219
+} 0
